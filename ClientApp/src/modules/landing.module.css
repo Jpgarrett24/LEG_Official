@@ -1,0 +1,26 @@
+.main{
+    background-color: #000000;
+    background-image: url("../images/dark_field.jpg");
+    background-size: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+.welcome{
+    display: inline-block;
+    margin-top: 7vh;
+    color: #c4c4c4;
+}
+.h2{
+    font-size: 2rem;
+}
+.h1{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 5rem;
+}
+.action{
+    display: inline-block;
+    width: 33vw;
+    margin: 7vh 20vw;
+    min-height: 30vh;
+    background-color: rgba(196, 196, 196, .25);
+}

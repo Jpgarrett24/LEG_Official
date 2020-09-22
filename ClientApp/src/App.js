@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link, Redirect, Router } from "@reach/router";
 import './custom.css'
+import Landing from './views/Landing';
 
 export default class App extends Component {
   static displayName = App.name;
@@ -8,8 +9,8 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <h1>hi there</h1>
         <Router>
+          <Landing path="/" />
         </Router>
       </>
     );
