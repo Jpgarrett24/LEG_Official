@@ -10,17 +10,54 @@
     margin-top: 7vh;
     color: #c4c4c4;
 }
-.h2{
+main .h2{
     font-size: 2rem;
+    color: #c4c4c4;
 }
 .h1{
     font-family: 'Grenze Gotisch', cursive;
     font-size: 5rem;
+}
+.leg{
+    font-family: 'Grenze Gotisch', cursive;
+    font-size: 1.25em;
 }
 .action{
     display: inline-block;
     width: 33vw;
     margin: 7vh 20vw;
     min-height: 30vh;
-    background-color: rgba(196, 196, 196, .25);
+    background-color: rgba(69, 69, 69, .5);
+}
+section .h2{
+    font-size: 2rem;
+    margin-top: 1vh;
+}
+.a{
+    display: inline-block;
+    color: #0f84d4;
+    text-decoration: underline;
+    margin-top: 2%;
+}
+.input{
+    background-color: rgba(69, 69, 69, .25);
+    text-align: center;
+    display: inline-block;
+    color: #c4c4c4;
+    width: 75%;
+    height: 2.5rem;
+    margin: 1% 2%;
+    border-radius: 5px;
+    border: 1px rgba(255, 255, 255, .25) solid;
+}
+.input::placeholder {
+    color: #c4c4c4;
+}
+.submit{
+    display: inline-block;
+    margin: 2% 10%;
+    background-color: #26570d;
+    width: 25%;
+    border-radius: 10px;
+    border: solid 1px black;
 }

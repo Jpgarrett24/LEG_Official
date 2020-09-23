@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "@reach/router";
+import { Link, navigate } from "@reach/router";
 import styles from "../modules/landing.module.css";
 
 const Landing = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault();
+        navigate("/home")
     }
 
     return (
@@ -14,8 +15,13 @@ const Landing = (props) => {
                 <h1 className={styles.h1}>League of Extraordinary Genitals</h1>
             </section>
             <section className={styles.action}>
+                <h2 className={styles.h2}>Already a league Member?</h2>
                 <form onSubmit={handleSubmit}>
+                    <input type="email" name="email" id="email" className={styles.input} placeholder="Email Address" />
+                    <input type="password" name="password" id="password" className={styles.input} placeholder="Password" />
+                    <button className={styles.submit}>Enter the <span className={styles.leg}>L.E.G.</span></button>
                 </form>
+                <Link to="/home" className={styles.a}>Continue as Guest</Link>
             </section>
         </main >
     )
