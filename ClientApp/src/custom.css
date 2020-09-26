@@ -1,14 +1,16 @@
 /* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+body{
+  background-color: #242424;
 }
 
-code {
-  color: #E01A76;
+.scoresNav{
+  background-color: #454545;
+  min-height: 66px;
+  width: 100vw;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.matchup{
+  display: inline-block;
+  margin: 0 5%;
+  color: #ffffff;
 }
