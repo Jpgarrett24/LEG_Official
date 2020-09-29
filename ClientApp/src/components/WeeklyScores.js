@@ -9,7 +9,7 @@ const WeeklyScores = (props) => {
     const { allUsers } = props;
 
     useEffect(() => {
-        axios.get("https://api.sleeper.app/v1/league/551962981649379328/matchups/4")
+        axios.get("https://api.sleeper.app/v1/league/551962981649379328/matchups/3")
             .then((res) => {
                 setScores(res.data);
                 for (let i = 0; i < res.data.length; i++) {
@@ -47,9 +47,10 @@ const WeeklyScores = (props) => {
                             let owner = allUsers.filter((team, idx) => {
                                 return (team.user_id === oneTeam.owner_id);
                             })[0];
-                            let avatar = `https://sleepercdn.com/avatars/`
+                            let avatar = `https://sleepercdn.com/avatars/${owner.avatar}`
                             return (
                                 <div className="matchupTeam" key={idx}>
+                                    <img className="matchupPhoto" src={avatar} alt="official team photo" />
                                     {owner.metadata.team_name ?
                                         <Link to={`/team/${owner.user_id}`}>{owner.metadata.team_name}</Link> :
                                         <Link to={`/team/${owner.user_id}`}> Team {owner.display_name}</Link>
