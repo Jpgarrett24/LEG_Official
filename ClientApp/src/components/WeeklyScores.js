@@ -9,7 +9,7 @@ const WeeklyScores = (props) => {
     const { allUsers } = props;
 
     useEffect(() => {
-        axios.get("https://api.sleeper.app/v1/league/551962981649379328/matchups/3")
+        axios.get("https://api.sleeper.app/v1/league/551962981649379328/matchups/4")
             .then((res) => {
                 setScores(res.data);
                 for (let i = 0; i < res.data.length; i++) {

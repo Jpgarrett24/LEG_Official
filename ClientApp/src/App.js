@@ -8,14 +8,18 @@ import axios from 'axios';
 
 const App = (props) => {
   const [allUsers, setAllUsers] = useState(null);
+  const [allPlayers, setAllPlayers] = useState(null);
   useEffect(() => {
     axios.get("https://api.sleeper.app/v1/league/551962981649379328/users")
       .then((res) => {
         setAllUsers(res.data);
       })
       .catch((err) => console.log(err));
+
+    axios.get("https://api.sleeper.app/v1/players/nfl")
+      .then((res) => setAllPlayers(res.data))
+      .catch((err) => console.log(err));
   }, []);
-  console.log(allUsers);
   return (
     <>
       <Router>
