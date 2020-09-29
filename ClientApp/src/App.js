@@ -15,7 +15,7 @@ const App = (props) => {
       })
       .catch((err) => console.log(err));
   }, []);
-
+  console.log(allUsers);
   return (
     <>
       <Router>

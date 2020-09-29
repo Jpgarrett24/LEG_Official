@@ -53,14 +53,14 @@ const WeeklyScores = (props) => {
                                     <img className="matchupPhoto" src={avatar} alt="official team photo" />
                                     {owner.metadata.team_name ?
                                         <Link to={`/team/${owner.user_id}`}>{owner.metadata.team_name}</Link> :
-                                        <Link to={`/team/${owner.user_id}`}> Team {owner.display_name}</Link>
+                                        <Link to={`/team/${owner.user_id}`}>Huge Bitch</Link>
                                     }
-                                    <span className="matchupUsername">{owner.display_name}</span>
+                                    <span className="matchupRecord">{oneTeam.settings.wins}-{oneTeam.settings.losses}-{oneTeam.settings.ties}</span>
+                                    {/* <span className="matchupUsername">@{owner.display_name}</span> */}
                                     {team.points ?
                                         <span className="matchupPoints">{team.points.toFixed(2)}</span> :
                                         <span className="matchupPoints">0.00</span>
                                     }
-                                    <span className="matchupRecord">{oneTeam.settings.wins} - {oneTeam.settings.losses} - {oneTeam.settings.ties}</span>
                                 </div>
                             )
                         })}
