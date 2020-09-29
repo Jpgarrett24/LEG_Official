@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link, navigate } from "@reach/router";
 import styles from "../modules/landing.module.css";
 

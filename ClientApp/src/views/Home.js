@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { Link, navigate } from "@reach/router";
+import React from "react";
 import WeeklyScores from "../components/WeeklyScores";
 
 const Home = (props) => {
+    const { allUsers } = props;
     return (
         <>
             <header>
-                <WeeklyScores />
+                <WeeklyScores allUsers={allUsers} />
             </header>
         </>
     );
