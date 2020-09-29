@@ -10,6 +10,13 @@ body{
   text-align: center;
 }
 
+.scoresNav form{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 2.5%;
+  margin-right: 15px;
+}
+
 .matchup{
   display: inline-block;
   background-color: #666666;

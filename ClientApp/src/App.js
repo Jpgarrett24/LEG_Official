@@ -24,7 +24,7 @@ const App = (props) => {
     <>
       <Router>
         <Landing path="/" />
-        <Home path="/home" allUsers={allUsers} />
+        <Home path="/home" allUsers={allUsers} allPlayers={allPlayers} />
       </Router>
     </>
   );
