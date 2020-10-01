@@ -8,8 +8,10 @@ const Home = (props) => {
         <>
             <header>
                 <WeeklyScores allUsers={allUsers} />
-                <TrendingPlayers allUsers={allUsers} allPlayers={allPlayers} />
             </header>
+            <main>
+                <TrendingPlayers allUsers={allUsers} allPlayers={allPlayers} />
+            </main>
         </>
     );
 };

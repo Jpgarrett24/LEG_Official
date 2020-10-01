@@ -54,3 +54,51 @@ body{
 .matchupPoints{
   display: block;
 }
+
+.trending{
+  border: solid 1px #ff9900;
+  display: inline-block;
+  width: 45vw;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  margin: 2%;
+}
+
+.trending button{
+  width: 50%;
+  height: 7.5vh;
+  border-top: none;
+  border-bottom: solid 1px #ff9900;
+  margin: 0;
+  background-color:  #666666;
+  color:  #00f7ff;
+}
+
+.trendingButtonUp{
+  border-radius: 20px 0 0 0;
+  border-left: none;
+  border-right: solid 1px #000000;
+}
+.trendingButtonDown{
+  border-radius: 0 20px 0 0;
+  border-right: none;
+  border-left: solid 1px #000000;
+}
+
+.trendingTable{
+  width: 100%;
+}
+
+#healthy{
+  color: #03ab00;
+}
+#IR, #COV{
+  color: #cf0000;
+}
+#Questionable{
+  color: #d1ca00;
+}
+#Doubtful{
+  color: #e08300;
+}
