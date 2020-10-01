@@ -102,3 +102,6 @@ body{
 #Doubtful{
   color: #e08300;
 }
+#trendingActive{
+  text-decoration: underline;
+}

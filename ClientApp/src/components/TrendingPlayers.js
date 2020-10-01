@@ -36,6 +36,32 @@ const TrendingPlayers = (props) => {
             );
         });
 
+        const UpDisplay = () => {
+            if (toggle === 0) {
+                return (
+                    <span id="trendingActive">Trending Up</span>
+                );
+            }
+            else {
+                return (
+                    "Trending Up"
+                );
+            }
+        }
+
+        const DownDisplay = () => {
+            if (toggle === 1) {
+                return (
+                    <span id="trendingActive">Trending Down</span>
+                );
+            }
+            else {
+                return (
+                    "Trending Down"
+                );
+            }
+        }
+
         const checkStatus = (status) => {
             if (status === null) {
                 return (
@@ -141,8 +167,8 @@ const TrendingPlayers = (props) => {
         };
         return (
             <section className="trending">
-                <button className="trendingButtonUp" onClick={(event) => setToggle(0)}>Trending Up</button>
-                <button className="trendingButtonDown" onClick={(event) => setToggle(1)}>Trending Down</button>
+                <button className="trendingButtonUp" onClick={(event) => setToggle(0)}>{UpDisplay()}</button>
+                <button className="trendingButtonDown" onClick={(event) => setToggle(1)}>{DownDisplay()}</button>
                 {clicky()}
             </section>
         );
