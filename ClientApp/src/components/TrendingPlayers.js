@@ -16,10 +16,35 @@ const TrendingPlayers = (props) => {
             .catch((err) => console.log(err));
     }, []);
 
-    return (
-        <section className="trending">
-        </section>
-    );
+    if (trendingUp === null || trendingDown === null || allPlayers === null) {
+        return (
+            <h1>loading</h1>
+        )
+    }
+
+    else {
+        const up = trendingUp.map((player) => {
+            return (
+                { ...player, details: allPlayers[`${player.player_id}`] }
+            );
+        });
+
+        const down = trendingDown.map((player) => {
+            return (
+                { ...player, details: allPlayers[`${player.player_id}`] }
+            );
+        });
+
+        console.log(up);
+        console.log(down);
+
+        return (
+            <section className="trending">
+                <button className="trendingButton">Trending Up</button>
+                <button className="trendingButton">Trending Down</button>
+            </section>
+        );
+    }
 }
 
 export default TrendingPlayers;
